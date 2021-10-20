@@ -1,0 +1,23 @@
+POST http://localhost:5000/api/phones HTTP/1.1
+Content-Type: application/json
+
+{
+  "model": "Galaxy M22",
+  "brand": "Samsung",
+  "year": 2021,
+  "memory_storage_capacity": 128,
+  "processor": "Mediatek",
+  "screen_size": 6.4,
+  "NFC": true
+}
+
+###
+
+GET http://localhost:5000/api/phones HTTP/1.1
+
+###
+
+GET http://localhost:5000/api/phones/:phoneId HTTP/1.1
+
+
+###
