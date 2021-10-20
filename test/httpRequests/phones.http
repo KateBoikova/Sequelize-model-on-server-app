@@ -5,9 +5,9 @@ Content-Type: application/json
   "model": "Galaxy M22",
   "brand": "Samsung",
   "year": 2021,
-  "memory_storage_capacity": 128,
+  "memoryStorageCapacity": 128,
   "processor": "Mediatek",
-  "screen_size": 6.4,
+  "screenSize": 6.4,
   "NFC": true
 }
 

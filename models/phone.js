@@ -3,7 +3,14 @@ const { Model } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
   class Phone extends Model {
-    static assosiate () {}
+    /**
+     * Helper method for defining associations.
+     * This method is not a part of Sequelize lifecycle.
+     * The `models/index` file will call this method automatically.
+     */
+    static associate (models) {
+      // define association here
+    }
   }
   Phone.init(
     {
@@ -25,7 +32,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
-      memory_storage_capacity: {
+      memoryStorageCapacity: {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
@@ -33,7 +40,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      screen_size: {
+      screenSize: {
         type: DataTypes.DECIMAL,
         allowNull: false,
       },
